@@ -1,3 +1,5 @@
+package src;
+
 public class HelloWord {
     //main---->psvm
     public static void main(String[] args) {
