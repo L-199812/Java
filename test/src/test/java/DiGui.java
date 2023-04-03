@@ -42,10 +42,18 @@ public class DiGui {
         return n % 10 + function3(n / 10);
 
     }
+
+    public static int function4(int n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        return function4(n-1) + function4(n-2);
+    }
     public static void main(String[] args) {
 //        main1(10);
 //        System.out.println(function(4));
 //        function2(123);
-        System.out.println(function3(123));
+//        System.out.println(function3(123));
+        System.out.println(function4(5));
     }
 }
